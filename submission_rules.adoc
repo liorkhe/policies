@@ -495,10 +495,12 @@ In the Network division for the inference datacenter the file <system_desc_id>.j
 | network_protocol | TCP/IPv4 over Ethernet
 | number_sut_nodes | 2 
 | number_connections | 2 
-| number_nic_sut | sut1: 2, sut2: 2
-| nic_sut | sut1: nic1: NVIDIA CX7, nic2: NVIDIA CX7, sut2: nic1: NVIDIA CX6, nic2: NVIDIA CX6  
-| net_software_stack_sut | sut1: Linux Kernel TCP stack v.XXX, sut2: Linux Kernel TCP stack v.YYY  
-| network_topology | Loadgen System connected to 2 SUTs through 24x100GE Switch XXX of manufacture YYY and Load Balancer ZZZ of manufacture SSS, each connected to a 100GE port
+| number_nic_sut | SUT1: 2, SUT2: 2
+| nic_sut | SUT1: NIC1: NVIDIA CX7, NIC2: NVIDIA CX7, SUT2: NIC1: NVIDIA CX6, NIC2: NVIDIA CX6  
+| net_software_stack_sut | SUT1: Linux Kernel TCP stack v.XXX,
+
+SUT2: Linux Kernel TCP stack v.YYY  
+| network_topology | Loadgen System connected to 2 SUTs through 24x100GE Switch XXX of manufacture YYY, and Load Balancer ZZZ of manufacture SSS. Devices are connected to the switch trough 100GE port.
 |===
 
 
